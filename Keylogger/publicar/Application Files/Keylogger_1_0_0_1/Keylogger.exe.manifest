@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Keylogger.exe" version="1.0.0.1" publicKeyToken="0400f5a861b092ce" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Keylogger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Keylogger.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Opciones del manifiesto de Control de cuentas de usuario
+          Si desea cambiar el nivel de Control de cuentas de usuario de Windows, reemplace el 
+          nodo requestedExecutionLevel por alguno de los siguientes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Si desea usar la virtualización de archivos y del Registro para la 
+         compatibilidad con versiones anteriores, elimine el nodo requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Keylogger.exe" size="233920">
+      <assemblyIdentity name="Keylogger" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UlxydLqEKqRaophimR8lwDmRuEZSCSwEBj2QJP06YFM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Keylogger.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=-IMM-\Giansalex" issuerKeyHash="909bc475eadd14cbd58a4f272391164775c3edd1" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KtOWDQYDu4T3pcYAQ/0Wx7QCAUNgMZXqyfe5Zsuln0M=</DigestValue></Reference></SignedInfo><SignatureValue>N4/TkDiF5h0g4FeOMfys6b7spNYoBKPH3AF2YbJi0iIfb7yd4KftqxTE4BdBIr3Ha77XiJIcW/TcoHkMtwDYHpYXe2CClmRqSvZ8xG6pJ4QkR77wI7MBJ/yHeqPArxjYTWXxRku9kixtLFdsuDWp6FLQ6qPRUGn3worV/V0AJ1I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pLHGv4L9Ig5kgZ7kMcWVWk8E52uzn8pi7iedvgnJxgJ2hGQCznf3oUmy/fQVCs2Rp5FI9ZoRpELYlcJfxWWNURsMDrzf14A2GNjx/3gpGkIyp61sOaCSSXjwxHlRTO2enSFokQ3M2tuwEp2sz18zMFVBAQuNP0+uNRwnOawynQ8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="439fa5cb66b9f7c9ea953160430102b4c716fd4300c6a5f784bb03060d96d32a" Description="" Url=""><as:assemblyIdentity name="Keylogger.exe" version="1.0.0.1" publicKeyToken="0400f5a861b092ce" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=-IMM-\Giansalex</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ie6VIHoK86zXinVq6BLPT0gh5Q/ujRcCATkO7rDl6mU=</DigestValue></Reference></SignedInfo><SignatureValue>gmd3HZP1wd7ja4pR8bP2Yws8A+6jxxs3FRWSR+B6K7Iaq4NNz0lUuZyL3jKXrt+IFObVPzAV7q6xUwFfktuFBUoqiYRVo2dhPqwKW6sSaCq7kP/LiAYT0JcHEZYdMV/u1lRLaiw1T+/0wkJ+IhERSKZDIB8yxPNU7VSS/3qN87M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pLHGv4L9Ig5kgZ7kMcWVWk8E52uzn8pi7iedvgnJxgJ2hGQCznf3oUmy/fQVCs2Rp5FI9ZoRpELYlcJfxWWNURsMDrzf14A2GNjx/3gpGkIyp61sOaCSSXjwxHlRTO2enSFokQ3M2tuwEp2sz18zMFVBAQuNP0+uNRwnOawynQ8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQH3EiNwKW7I1JS2MkDnKLmTANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ALQBJAE0ATQAtAFwARwBpAGEAbgBzAGEAbABlAHgwHhcNMTcwMjAxMjAzMTE2WhcNMTgwMjAyMDIzMTE2WjApMScwJQYDVQQDHh4ALQBJAE0ATQAtAFwARwBpAGEAbgBzAGEAbABlAHgwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKSxxr+C/SIOZIGe5DHFlVpPBOdrs5/KYu4nnb4JycYCdoRkAs5396FJsv30FQrNkaeRSPWaEaRC2JXCX8VljVEbDA6839eANhjY8f94KRpCMqetbDmgkkl48MR5UUztnp0haJENzNrbsBKdrM9fMzBVQQELjT9PrjUcJzmsMp0PAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAS72ZlBrE6RS6SctwfzkhudBjBPrLStARai2G6JhsHk4qgv/gxaUDTO7Xf1Qxk90D49JOF7UetvZyIwG4CZVAXzJxwnkWqdV5bswSpESm4kezeb9V0As8Ue6v2x8kRSRPTeqtIEXLp7SdRTNA6clRNhEgKr7dA1i+TTNPQgftxgI=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
